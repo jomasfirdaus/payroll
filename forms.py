@@ -23,5 +23,5 @@ class SalaryForm(forms.ModelForm):
 				Column('gross', css_class='form-group col-md-12 mb-0'),
 				css_class='form-row'
 			),
-			HTML(""" <button class="btn btn-primary" type="submit" title="Rai">Rai <i class="fa fa-save"></i></button> """)
+			HTML(""" <button class="btn btn-primary" type="submit" title="Rai">Save <i class="fa fa-save"></i></button> """)
 		)

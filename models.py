@@ -6,8 +6,7 @@ from employee.models import *
 
 
 class Salary(models.Model):
-    employee = models.ForeignKey(Employee, on_delete=models.CASCADE, null=True, related_name='salary')
-    contract = models.OneToOneField(Contract, on_delete=models.CASCADE, null=True, blank=True, related_name='salary')
+    contract = models.ForeignKey(Contract, on_delete=models.CASCADE, null=True, blank=True, related_name='salary')
     gross = models.DecimalField(max_digits=7, decimal_places=2, null=True, blank=True, verbose_name="Gross Salary")
     tax = models.DecimalField(max_digits=7, decimal_places=2, null=True, blank=True)
     social = models.DecimalField(max_digits=7, decimal_places=2, null=True, blank=True, verbose_name="Social Security")
