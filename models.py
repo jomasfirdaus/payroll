@@ -23,7 +23,7 @@ class Salary(models.Model):
     deleted_at = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
-        template = '{0.employee} ({0.contract})'
+        template = '{0.contract}'
         return template.format(self)
     
     def delete(self, user):
